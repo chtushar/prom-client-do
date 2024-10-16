@@ -1,19 +1,22 @@
 {
-  "name": "prom-client-do",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsup src/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "tsup": "^8.3.0",
-    "typescript": "^5.6.3"
-  },
-  "dependencies": {
-    "prom-client": "^15.1.3"
-  }
+	"name": "prom-client-do",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsup",
+		"cf-typegen": "wrangler types"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20241011.0",
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.3",
+		"wrangler": "^3.80.4"
+	},
+	"dependencies": {
+		"prom-client": "^15.1.3"
+	}
 }
